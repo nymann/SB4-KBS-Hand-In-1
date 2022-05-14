@@ -2,9 +2,14 @@
 \documentclass[12pt,twoside]{report}
 \usepackage[a4paper,left=20mm,right=20mm,top=25mm,bottom=25mm,headheight=15pt]{geometry}
 \usepackage{graphicx}
-\usepackage{lipsum}
 \graphicspath{ {images/} }
 
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{link}{HTML}{0349B4}
+\newcommand{\link}[1]{{\color{link}\href{#1}{#1}}}
 
 % Font
 \usepackage{titlesec}
@@ -90,8 +95,11 @@
     \input{chapters/table_of_contents}
     \newpage
     
-    \chapter{Part One}
-    \input{chapters/part_one.tex}
+    \chapter{Introduction}
+    \input{chapters/introduction.tex}
+
+    \chapter{Labs}
+    \input{chapters/labs.tex}
 
     \appendix
     \chapter{Appendix}
