@@ -87,19 +87,8 @@
 \pagenumbering{arabic}
 
 \begin{document}
-    \input{chapters/titlepage.tex}
-    \newpage
-    
-    \input{chapters/table_of_contents}
-    \newpage
-    
-    \chapter{Introduction}
-    \input{chapters/introduction.tex}
-
-    \chapter{Labs}
-    \input{chapters/labs.tex}
-
-    \appendix
-    \chapter{Appendix}
-    \input{chapters/appendix.tex}
+    \include{chapters/titlepage.tex}
+    \include{chapters/table_of_contents}
+    \include{chapters/introduction.tex}
+    \include{chapters/labs.tex}
 \end{document}

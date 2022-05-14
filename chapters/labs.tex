@@ -1,37 +1,7 @@
-\section{Intro Lab}
-By visiting \link{https://github.com/nymann/IntroLab} you can see a gif demo of what
-the game looks like at this stage in the \texttt{README.md} file.
-
-\subsection{Implemented features}
-\begin{enumerate}
-        \item Added Enemy ship that moves randomly and shoots bullets
-        \item Bullets will automatically be removed when outside the screen area.
-        \item Naive weapon cooldown\: (you can only shoot if there's less than $n$ bullets on screen)
-        \item Colored enemy ship, player ship and bullets.
-\end{enumerate}
-
-\subsection{Running via Make}
-Just like we in this course strive towards abstraction and utilising various
-techniques to manage our dependencies, I think it's important to abstract the build and
-running process as much as possible, to avoid being tied to an IDE (or even a
-specific build system (Maven in this case). In order to do this I utilise \texttt{GNU
-Make}, so the end user can simply invoke make run to run the
-application via \texttt{make run} and test the application via \texttt{make test}.
-And if we then at a later point want to use another build tool like Gradle or Ant,
-then we only need to change the Make targets.
-
-\section{Games Lab}
-By visiting \link{https://github.com/nymann/GamesLab} you can see a gif demo of what
-the game looks like at this stage in the \texttt{README.md} file.
-
-\section{Java Lab}
-\link{https://github.com/nymann/JavaLab}
-
-\section{Design Lab}
-\link{https://github.com/nymann/DesignLab}
-
-\section{NetBeans Lab 1}
-\link{https://github.com/nymann/NetBeansLab1}
-
-\section{NetBeans Lab 2}
-\link{https://github.com/nymann/NetBeansLab2}
+\chapter{Labs}
+\input{chapters/labs/intro_lab.tex}
+\input{chapters/labs/games_lab.tex}
+\input{chapters/labs/java_lab.tex}
+\input{chapters/labs/design_lab.tex}
+\input{chapters/labs/netbeans_lab_1.tex}
+\input{chapters/labs/netbeans_lab_2.tex}

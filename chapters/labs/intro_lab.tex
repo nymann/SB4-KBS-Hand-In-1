@@ -1,0 +1,21 @@
+\section{Intro Lab}
+By visiting \link{https://github.com/nymann/IntroLab} you can see a gif demo of what
+the game looks like at this stage in the \texttt{README.md} file.
+
+\subsection{Implemented features}
+\begin{enumerate}
+        \item Added Enemy ship that moves randomly and shoots bullets
+        \item Bullets will automatically be removed when outside the screen area.
+        \item Naive weapon cooldown\: (you can only shoot if there's less than $n$ bullets on screen)
+        \item Colored enemy ship, player ship and bullets.
+\end{enumerate}
+
+\subsection{Running via Make}
+Just like we in this course strive towards abstraction and utilising various
+techniques to manage our dependencies, I think it's important to abstract the build and
+running process as much as possible, to avoid being tied to an IDE (or even a
+specific build system (Maven in this case). In order to do this I utilise \texttt{GNU
+Make}, so the end user can simply invoke \texttt{make run} to run the
+application and \texttt{make test} to run the test suite.
+The benefit of this is that if at a later point we want to use another build tool like Gradle or Ant,
+then we only need to change the Make targets.
