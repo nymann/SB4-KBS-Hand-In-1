@@ -2,6 +2,9 @@
 By visiting \link{https://github.com/nymann/IntroLab} you can see a gif demo of what
 the game looks like at this stage in the \texttt{README.md} file.
 
+See \ref{design-lab} for an analysis of dependencies and possible design
+changes.
+
 \subsection{Implemented features}
 \begin{enumerate}
         \item Added Enemy ship that moves randomly and shoots bullets
@@ -10,12 +13,12 @@ the game looks like at this stage in the \texttt{README.md} file.
         \item Colored enemy ship, player ship and bullets.
 \end{enumerate}
 
-\subsection{Running via Make}
-Just like we in this course strive towards abstraction and utilising various
-techniques to manage our dependencies, I think it's important to abstract the build and
-running process as much as possible, to avoid being tied to an IDE (or even a
-specific build system (Maven in this case). In order to do this I utilise \texttt{GNU
-Make}, so the end user can simply invoke \texttt{make run} to run the
-application and \texttt{make test} to run the test suite.
-The benefit of this is that if at a later point we want to use another build tool like Gradle or Ant,
-then we only need to change the Make targets.
+\subsection{Running the game}
+\begin{minted}{sh}
+# Via make target
+make run
+
+# Via maven
+mvn package -f AsteroidsLibGDX/pom.xml
+java -jar bin/AsteroidsLibGDX-1.0-SNAPSHOT.jar
+\end{minted}
